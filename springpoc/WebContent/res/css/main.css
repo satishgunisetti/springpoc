@@ -95,6 +95,11 @@ label.light {
   display: inline;
 }
 
+.error{
+	color: red;
+	font-size: small;
+}
+
 .number {
   background-color: #5fcf80;
   color: #fff;

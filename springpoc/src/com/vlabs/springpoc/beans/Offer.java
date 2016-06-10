@@ -1,9 +1,21 @@
 package com.vlabs.springpoc.beans;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 public class Offer {
 	private int id;
+	
+	@NotNull
+	@Size(min=5, max=20, message="Name must be between 5 and 20 characters")
 	private String name;
+	
+	@NotNull
+	@Pattern(regexp=".*\\@.*\\..*", message="Invalid email")
 	private String email;
+	
+	@Size(min=5, max=100, message="Offer must be between 5 and 20 characters")
 	private String text;
 
 	public Offer(){

@@ -9,9 +9,9 @@
 </head>
 <body>
 <c:forEach var="offer" items="${offers}">
-	<c:out value="${offer.id} "></c:out>
+<p>	<c:out value="${offer.id} "></c:out>
 	<c:out value="${offer.name} "></c:out>
-	<c:out value="${offer.email} "></c:out>
+	<c:out value="${offer.email} "></c:out></p>
 </c:forEach>
 
 </body>
